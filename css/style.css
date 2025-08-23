@@ -4,7 +4,7 @@ body { margin: 0; }
 
 /* GLOBAL COLORS */
 body {
-    background-color: rgba(221,221,221,1);
+    background-color: rgb(212, 192, 230);
     color: rgba(0,0,0,.8);
 }
 a { color: rgba(0,0,0,.9);}
@@ -40,6 +40,15 @@ a { text-decoration: none;}
 img {
     max-width: 100%;
     height: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img.circular {
+  border-radius: 100%;
 }
   
 /* BUTTONS */
@@ -96,6 +105,117 @@ img {
   .site-header h1 a:hover {
     color: rgba(0, 0, 0, 1);
   }
+
+.site-branding h1 {
+  font-size: 2em;
+  margin: 0;
+  font-weight: normal;
+}
+
+.site-navigation ul {
+  margin: 0;
+  padding: 2em 0;
+}
+
+.site-navigation li {
+  margin: 0 .5em;
+  padding: 0;
+  display: inline-block;
+}
+
+.site-navigation a {
+  display: block;
+  padding: 1em .5em;
+  color: rgba(0,0,0,.4);
+}
+
+.site-navigation a:hover,
+.site-navigation a.selected {
+  color: rgba(0,0,0,.6);
+  border-bottom: 0.05em solid rgba(0,0,0,.2);
+}
+
+section {
+  padding: 0 0 3em 0;
+}
+
+
+/* FLEX GRID */
+
+@media (min-width: 768px) {
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  .one-third.column {
+    width: 32%;
+  }
+  .two-thirds.column {
+    width: 60%;
+  }
+
+}
+
+/* #THUMBGRID */
+.thumbgrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.thumbgrid a {
+  width: 49.5%;
+}
+
+@media (min-width:768px) {
+  .thumbgrid a {
+    width: 24.5%;
+  }
+}
+
+.thumbgrid a img {
+  filter: brightness(1.05);
+  transition: all ease-in-out 0.2s;
+  border: 1px solid rgba(255,255,255,0);
+}
+
+.thumbgrid a:hover img {
+  filter: brightness(1);
+  border: 1px solid rgba(0,0,0,.3);
+}
+
+/* HELPERS */
+.text-centered {
+  text-align: center;
+}
+
+.text-centered p,
+.mywufooform{
+  max-width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subheader {
+  color: rgba(0,0,0,.5);
+  font-weight: normal;
+}
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.full-width img {
+  width: 100%;
+}
+
   
   /* SITE NAV */
   .site-navigation ul {
@@ -140,6 +260,7 @@ section {
 /* FEATURED PROJECTS ON HOME PAGE */
 @media (min-width: 768px) {
 
+
     .featuredproject {
       display: flex;
       justify-content: space-between;
@@ -159,3 +280,22 @@ section {
     }
   
   }
+
+ /* HERO */
+ .hero {
+  margin-top: 2em;
+ }
+
+ .hero h1 {
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 6em;
+   margin: 0;
+ }
+
+.intro {
+  margin: 3em;
+  padding: 3em;
+  background-color: aliceblue;
+  border-radius: 2em;
+}
+
