@@ -17,7 +17,7 @@ body {
     font-size: 87.5%; /* 14px */
     line-height: 1.4;
 }
-h1,h2,h3 { font-weight: normal; }
+h2, h3 {font-weight: normal;}
 p { max-width: 35em; }
 a { text-decoration: none;}
 
@@ -43,9 +43,8 @@ img {
 }
 
 img {
-  max-width: 60%;
+  max-width: 100%;
   height: auto;
-  padding-bottom: 3em;
 }
 
 img.circular {
@@ -161,7 +160,7 @@ section {
 
 /* #THUMBGRID */
 .thumbgrid {
-  display: block;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -184,7 +183,7 @@ section {
 
 .thumbgrid a:hover img {
   filter: brightness(1);
-  /* border: 1px solid rgba(0,0,0,.3); */
+  border: 1px solid rgba(0,0,0,.3);
 }
 
 /* HELPERS */
@@ -299,4 +298,93 @@ section {
   background-color: aliceblue;
   border-radius: 2em;
 }
+
+/* OVERLAP BLOCKS */
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+figure {
+  margin: 0;
+}
+.wp-block-group {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  margin: 4em 0;
+}
+
+.wp-block-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 782px) {
+  .wp-block-columns {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.wp-block-column {
+  flex-grow: 1;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 782px) {
+  .wp-block-column {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+}
+
+/* POTENTIAL CHILD THEME CUSTOM STYLING */
+
+/* NMA OVERLAPS */
+
+@media (min-width: 782px) {
+  .nma-overlap {
+    align-items: center;
+  }
+
+  .nma-overlap .wp-block-column:last-child {
+    background: rgb(220, 220, 220);
+    padding: 2em;
+    margin-left: -4em;
+    position: relative;
+    z-index: 10;
+  }
+
+  .nma-overlap.nma-swap {
+    flex-direction: row-reverse;
+  }
+
+  .nma-overlap.nma-swap .wp-block-column:last-child {
+    margin-left: 0;
+    margin-right: -4em;
+  }
+
+  .nma-overlap.nma-topalign {
+    align-items: flex-start;
+  }
+  .nma-overlap.nma-topalign .wp-block-column:last-child {
+    margin-top: -4em;
+  }
+
+  .nma-overlap.nma-bottomalign {
+    align-items: flex-end;
+  }
+  .nma-overlap.nma-bottomalign .wp-block-column:last-child {
+    margin-bottom: -4em;
+  }
+
+  .nma-overlap.nma-bottomalign figcaption {
+    margin-right: 5em;
+  }
+}
+
+/* DIV (CHALLENGES) */
 
