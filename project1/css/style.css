@@ -36,6 +36,7 @@ a { text-decoration: none;}
     color: rgba(0,0,0,.5); 
 }
 
+
 /* MEDIA */
 img {
     max-width: 100%;
@@ -65,11 +66,23 @@ img.circular {
     border-color: rgba(0, 0, 0, 1);
 }
 
-/* LAYOUT */
+/* CONTAINER */
 .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container img {
+  display: block;
+  padding: 50px 20px 20px 20px;
+}
+
+/* LAYOUT */
+/* .container {
     max-width: 1000px;
     margin: 0 auto;
-  }
+  } */
 
   /* STRUCTURE */
 

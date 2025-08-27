@@ -65,11 +65,31 @@ img.circular {
     border-color: rgba(0, 0, 0, 1);
 }
 
-/* LAYOUT */
+/* TEXT BLOCK */
+
+.text-block {
+    max-width: 1000px;
+    margin: 40px 0 40px 20px;
+    text-align: left;
+}
+/* CONTAINER */
 .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container img {
+  display: block;
+  padding: 50px 20px 20px 20px;
+}
+
+/* LAYOUT */
+/* .container {
     max-width: 1000px;
     margin: 0 auto;
-  }
+  } */
+
 
   /* STRUCTURE */
 
@@ -440,3 +460,4 @@ figure {
   content: "";
   width: 350px;
 }
+
