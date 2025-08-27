@@ -4,7 +4,7 @@ body { margin: 0; }
 
 /* GLOBAL COLORS */
 body {
-    background-color: rgb(212, 192, 230);
+    background-color: rgb(255, 255, 255);
     color: rgba(0,0,0,.8);
 }
 a { color: rgba(0,0,0,.9);}
@@ -40,12 +40,6 @@ a { text-decoration: none;}
 img {
     max-width: 100%;
     height: auto;
-}
-
-img {
-  max-width: 60%;
-  height: auto;
-  padding-bottom: 3em;
 }
 
 img.circular {
@@ -187,6 +181,13 @@ section {
   /* border: 1px solid rgba(0,0,0,.3); */
 }
 
+.thumbgrid img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 /* HELPERS */
 .text-centered {
   text-align: center;
@@ -299,4 +300,3 @@ section {
   background-color: aliceblue;
   border-radius: 2em;
 }
-
