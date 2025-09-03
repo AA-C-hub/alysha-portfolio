@@ -5,7 +5,7 @@ body { margin: 0; }
 /* GLOBAL COLORS */
 body {
     background-color: rgb(255, 255, 255);
-    color: rgba(0,0,0,.8);
+    color: rgba(83, 18, 71, 0.8);
 }
 a { color: rgba(0,0,0,.9);}
 a:hover { color: rgba(0, 0, 0, 1); }
@@ -372,7 +372,7 @@ figure {
   }
 
   .nma-overlap .wp-block-column:last-child {
-    background: rgb(99, 43, 116);
+    background: rgb(239, 207, 255);
     padding: 2em;
     margin-left: -4em;
     position: relative;
@@ -412,7 +412,7 @@ figure {
 .site-main .research{
   background-size: cover;
   background-position: 50% 50%;
-  background-image: url(file:///Users/alyshacayabyab/Desktop/customportfolio/alysha-portfolio/project1/img/bk-sign2.png);
+  background-image: url(file:///Users/alyshacayabyab/Desktop/Github/studentsite/art298/alysha-portfolio/project3/img/helsinki_finland.jpeg);
   border-top: none;
 }
 
@@ -440,7 +440,7 @@ figure {
 }
 
 .gallery {
-  background-color: rgb(185, 159, 232);
+  background-color: rgba(83, 18, 71, 0.8);
   border-radius: 30px;
 }
 
@@ -475,7 +475,7 @@ figure {
 .rgallery h1{
   font-family: Helvetica, sans-serif;
     font-size: 5em;
-    color:rgb(31, 29, 29);
+    color:rgb(255, 255, 255);
     line-height: 1.4;
     text-align: center;
 }
@@ -529,4 +529,9 @@ figure {
 @keyframes nma-fade-in {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+/* LOGO IMAGE */
+.tourism {
+  padding: 4.5em;
 }
