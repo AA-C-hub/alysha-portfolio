@@ -411,7 +411,7 @@ figure {
 .site-main .research{
   background-size: cover;
   background-position: 50% 50%;
-  background-image: url(../img/opticalbg.jpg);
+  background-color:black;
   border-top: none;
 }
 

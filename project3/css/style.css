@@ -300,7 +300,10 @@ section {
  /* HERO */
  .hero {
   margin-top: 2em;
-  background-color: rgb(240, 194, 61);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(file:///Users/alyshacayabyab/Desktop/customportfolio/alysha-portfolio/project3/img/finland.jpg);
+  border-top: none;
  }
 
  .hero .block {
