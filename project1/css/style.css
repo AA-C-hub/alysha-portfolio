@@ -155,6 +155,13 @@ section {
   padding: 0 0 3em 0;
 }
 
+.site-id{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
 
 /* FLEX GRID */
 
