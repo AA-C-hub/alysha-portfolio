@@ -488,3 +488,17 @@ figure {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+/* ABOUT PAGE */
+.about{
+  background-color: #e6ddec;
+  border-radius: 30px;
+  padding: 3em;
+  margin: 2em;
+}
+
+.about h1{
+  font-family: Helvetica, sans-serif;
+   font-weight: bolder;
+   font-size: 4em;
+}
