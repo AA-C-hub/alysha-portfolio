@@ -86,9 +86,9 @@ img.circular {
 .button {
     display: inline-block;
     border: none;
-    background-color:#be9bd5;
+    background-color:#b37fd6;
     ;
-    color:black;
+    color:rgb(255, 255, 255);
     border-radius: 3em;
     padding: 0.75em 1em;
     margin-top: .5em;
@@ -97,7 +97,7 @@ img.circular {
 }
 .button:hover {
     background: rgba(0, 0, 0, 1);
-    color: rgba(255,255,255,1);
+    color: #cbdc4e;
     border-color: rgba(0, 0, 0, 1);
 }
 
@@ -357,7 +357,7 @@ section {
  }
 
  .project1-hero {
-  background-color:#cbdc4e;;
+  background-color:#cbdc4e;
  }
 
  .project3-hero{
