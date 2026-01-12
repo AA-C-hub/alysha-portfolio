@@ -367,6 +367,13 @@ section {
     border-top: none;
  }
 
+ .project5-hero{
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(../project5/img/city-booyah.jpg);
+  border-top: none;
+}
+
  .hero h1 {
    font-family: Helvetica, sans-serif;
    font-weight: bolder;
@@ -626,6 +633,19 @@ figure {
   border-top: none;
 }
 
+.project5{
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(../project5/img/booyah_research.png);
+  border-top: none;
+}
+
+.project5 h1{
+  font-family: Helvetica, sans-serif;
+   font-weight: bolder;
+   font-size: 4em;
+   color: white;
+}
 
 /* TEXT BLOCK */
 .text-block{
