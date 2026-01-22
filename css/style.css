@@ -56,6 +56,21 @@ img.circular {
   border-radius: 100%;
 }
 
+video {
+  /* Ensures the video is responsive, scaling to its container's width */
+  width: 100%; 
+  height: auto; /* Maintains the aspect ratio automatically */
+  /* Add additional styling like margins, borders, or positioning */
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.gif-round{
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
 /* LOGO */
 .logo{
   padding: 2em;
@@ -82,7 +97,7 @@ img.circular {
 
 /* LAYOUT */
 .container{
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -297,6 +312,15 @@ section {
     margin: 1em;
   }
 
+  .center-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    padding: 2em;
+  }
+  
+
   /* MAIN CONTENT */
 main { padding: 1em 0; }
 section {
@@ -347,12 +371,28 @@ section {
     border-top: none;
  }
 
+ .project4-hero{
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(../project4/img/track-field.jpeg);
+  border-top: none;
+}
+
  .project5-hero{
   background-size: cover;
   background-position: 50% 50%;
   background-image: url(../project5/img/city-booyah.jpg);
   border-top: none;
 }
+
+.project6-hero{
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(../project6/img/skg-hero.png);
+  border-top: none;
+}
+
+
 
  .hero h1 {
    font-family: Helvetica, sans-serif;
@@ -376,8 +416,9 @@ section {
 .intro {
   margin: 3em;
   padding: 3em;
-  background-color: aliceblue;
+  background-color: white;
   border-radius: 2em;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
 }
 
 
@@ -434,7 +475,7 @@ figure {
 
   .nma-overlap .wp-block-column:last-child {
     background: rgb(255, 255, 255);
-    padding: 2em;
+    padding: 3em;
     margin-left: -4em;
     position: relative;
     z-index: 10;
@@ -501,6 +542,7 @@ figure {
     color:rgb(31, 29, 29);
     line-height: 1.4;
     text-align: center;
+    padding: 0 1em 0 1em;
 }
 
 /* IMAGE GRID */
@@ -629,10 +671,41 @@ figure {
 }
 
 /* TEXT BLOCK */
-.text-block{
-  margin-bottom: 2em;
-  padding-bottom: 3em;
+.text-block {
+  max-width: 900px;          /* Keeps text readable on large screens */
+  margin: 0 auto;            /* Centers the block */
+  padding: 2rem 1.5rem;      /* Default padding (mobile-first) */
 }
+
+.text-block h2 {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .text-block {
+    padding: 3rem 2.5rem;
+  }
+
+  .text-block h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .text-block {
+    padding: 4rem 3rem;
+  }
+
+  .text-block h2 {
+    font-size: 1.35rem;
+  }
+}
+
 
 /* HELSINKI LOGO */
 .logo-helsinki{
