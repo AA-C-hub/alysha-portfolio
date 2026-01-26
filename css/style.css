@@ -371,10 +371,31 @@ section {
     border-top: none;
  }
 
+ .project2-hero{
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color:#b37fd6;
+  border-top: none;
+  min-height: 250px;
+}
+
+.project2-hero > div {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 20px; 
+}
+
+.project2-hero img {
+  width: clamp(100px, 15vw, 180px);
+  height: auto;
+}
+
+
  .project4-hero{
   background-size: cover;
   background-position: 50% 50%;
-  background-image: url(../project4/img/track-field.jpeg);
+  background-color: #fff;
   border-top: none;
 }
 
